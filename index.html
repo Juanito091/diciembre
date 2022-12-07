@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="stock.js"></script>
+    <script defer src="modal.js"></script>
+    <script defer src="app.js"></script>
     <title>PostMortem</title>
 
 </head>
@@ -20,17 +25,27 @@
         <nav class="navbar">
             <a href="#">Inicio</a>
             <a href="#">Devoluciones</a>
-            <a href="#">Conacto</a>
+            <a href="Login/login.html">Registrase</a>
         </nav>
 
     </div>
 
     <header class="content header">
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
 
             <h2 class="title">PostMortem</h2>
             <div class="btn-home">
                 <a href="https://www.instagram.com/juaniigarcia____/" class="btn">Saber mas</a>
             </div>
+            <main id="contenedor-productos">
+
+            </main>
+        
+            <div class="modal-contenedor">
+                <div class="modal-carrito">
+                    <h3>Carrito</h3>
+                    <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                    <div id="carrito-contenedor">
             <div class="box-container">
     
                 <div class="box">
@@ -56,18 +71,26 @@
             <div class="box-container">
     
                 <div class="box">
+                    <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                    <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
                     <img src="img/r1.png" >
                     <h3>Lorem</h3>
                 </div>
                 <div class="box">
+                    <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                    <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
                     <img src="img/r2.png" >
                     <h3>Lorem</h3>
                 </div>
                 <div class="box">
+                    <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                    <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
                     <img src="img/r3.png" >
                     <h3>Lorem</h3>
                 </div>
                 <div class="box">
+                    <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                    <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
                     <img src="img/r4.png" >
                     <h3>Lorem</h3>
                 </div>
@@ -77,14 +100,26 @@
         </section>
     </header>
 
-    
-
     <section class="content contact">
         <h2 class="title">Contacto</h2>
         <p><b>E-mail:</b>juani_gmoreno@hotmail.com</p>
         <p><b>Numero:</b>2613409193</p>
         </figure>
     </section>
+    <header>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+    </header>
+
+
+    <main id="contenedor-productos">
+
+    </main>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
     
 </body>
 </html>
